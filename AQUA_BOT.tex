@@ -1,0 +1,145 @@
+\documentclass[dvips,12pt]{article}
+
+
+
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+
+
+
+\setlength{\oddsidemargin}{0.25in}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+
+\title{\bf Team ID:1054}
+\author{}
+\date{}
+
+\newcommand{\namelistlabel}[1]{\mbox{#1}\hfil}
+\newenvironment{namelist}[1]{%1
+\begin{list}{}
+    {
+        \let\makelabel\namelistlabel
+        \settowidth{\labelwidth}{#1}
+        \setlength{\leftmargin}{1.1\labelwidth}
+    }
+  }{
+\end{list}}
+
+\begin{document}
+\maketitle
+
+\begin{namelist}{xxxxxxxxxxxx}
+\item[{\bf Title:}]
+	AQUA-Bot: A Crop Watering Mobile Robot For precision
+Irrigation.
+\item[{\bf Members:}]
+	Nishant Mishra
+	\item Piyush Bansal
+	\item Mayank Bansal
+	\item Kashish Awasthi
+\item[{\bf Mentor:}]
+	Mrs.Bindu Rani
+\end{namelist}
+
+
+\section*{Project Keywords} eyic2019-20,More productivity,Sustainable irrigation,IOT,Saving water,Good crops,SDG
+
+
+\section*{Project Introduction} We are running short on water in many parts of the world. Droughts are becoming more common and
+severe, and the costs of water and food are going up. Farmers and gardeners urgently need to produce more
+with less water. India uses about 75 percent of its fresh water for irrigation, still farmers are facing the problem of
+reduced quality of crops due to inadequate irrigation, and we are thriving for fresh drinking water. Thus,
+finding a unique way is need of the hour so that we can get “More Crop, Per Drop”. The objective is to make
+such a robot which waters the crops as per their requirements. Here by requirement we mean that plant will
+get that much water, that they need for their good development. Here our Robot has sensors like soil
+moisture sensor, temperature sensor, and a DHT22 sensor which are used to sense the moisture of the soil,
+temperature of the soil and the humidity of the surroundings. These conditions are analysed by our robot,
+using the algorithm we have uploaded in the microcontroller, If the plant requires water our robot will
+irrigate the plant by pouring water from the inbuilt water tank on the robot.
+\section*{Project Literature Survey}
+Micro irrigation has seen a steady growth over the years. Since 2005, area covered under micro irrigation
+systems has grown at a CAGR of 9.6 percent and reached 7.73 million hectares. However, the potential area which
+can be covered under micro – irrigation was totaled to 69.5 million hectares in 2015, As now a days farmers
+are facing problems in proper irrigation of their crops, they are using some micro irrigation systems like drip
+irrigation or Agricultural robots are gaining traction among the farmers, owing to the need for producing
+sprinkler systems which are no matter good systems but not portable. Thus, there is a good scope for such
+watering robots who will give water to the crops as per their requirement, and controlled by phones by the
+farmers like a RC toy.
+
+\section*{Hardware Requirements}
+\begin{itemize}
+ \item 1. NodeMCU ESP8266.
+ \item 2. NodeMCU ESP8266 Serial Port Baseboard Lua WIFI Development Board.
+\item 3. Temperature and Humidity Sensor DHT22.
+\item 4. Soil Moisture Sensor.
+\item 5. Waterproof Digital Temperature Sensor Probe DS18B20.
+\item 6. DC 12V 2CH 2 Channel Isolated Optocoupler High/Low Level Trigger Relay Module.
+\item 7. Mini DC Water Pump.
+\item 8. 1602 (16x2) LCD Display with I2C/IIC interface.
+\item 9. Jumper Wires.
+\item 10. LED’s.
+\item 11. Buttons.
+\item 12.Resistance box.
+\end{itemize}
+\section*{Software Requirements}
+\begin{itemize}
+\item 1. Arduino IDE.
+\item 2. Fritzing.
+\item 3. Circuito.io.
+\item 4. Blynk(Android App.).
+\end{itemize}
+\section*{Implementations}
+The farmers will be given an IOT controlled robot (AQUA-Bot) which can be controlled with the
+smartphones like a remote-controlled car toy. This robot will be equipped with a smart irrigation module,
+which consists of sensors like soil moisture sensor, soil Temperature sensors and a DHT22 sensor. All these
+sensors will be connected to a NodeMCU ESP8266 wifi microcontroller and a water pump will also be
+connected to this microcontroller.
+All the sensors in the smart irrigation module will take the data from the soil and the plant’s surroundings,
+and this data will be analysed by the algorithm we have uploaded in the microcontroller and will be sent to
+the Blynk Cloud. this data will be sent to the android application (Blynk) and can be analysed by the farmers
+too, now for example if the condition is true (i.e. Moisture of soil is less than 50percent) then a notification will be
+sent to the farmer that moisture is low, please turn on the water pump, now farmer can decide whether he
+wants to water the plant or not. Let’s take an, another condition (i.e. Moisture of soil is more than 50% but
+the humidity of surroundings is low and temperature is high) then farmer will analyse the condition and can
+still water the plant even if the soil moisture is sufficient.
+The image given below is the block diagram of the smart irrigation module.
+
+\begin{center}
+\resizebox{7in}{!}{\includegraphics*{fk.jpg}}
+\end{center}
+
+
+\bf Flowchart:
+\begin{center}
+\resizebox{7in}{!}{\includegraphics*{fk2.jpg}}
+\end{center}
+
+\section*{Feasibility}
+The current micro-irrigation technologies which are being used by the farmers are drip irrigation, sprinkler
+systems etc. These techniques are no doubt are good but there, limitation is they are not portable and they do
+not analyse the water requirements of plants according to the environmental conditions. In order to introduce
+a new, unique and portable way to irrigate the field using less water, we have come up with our idea of
+“Crop watering mobile robot for precision irrigation” whom we have named AQUA-Bot. Our idea can be
+installed in the Agricultural robots present in the market making them AGRIBOTS 2.0, as, in agribots now a
+days there are soil sensors, AI based weeding mechanisms etc. but there is no any way to water the plants
+using the agribot. Thus, our idea will definitely become a milestone in irrigation sector and is market
+feasible.
+
+ 
+\begin{thebibliography}{99}
+
+\bibitem ihttps://www.electronicwings.com/nodemcu/soil-moisture-sensor-interfacing-with-nodemcu
+\bibitem ihttps://www.14core.com/wiring-the-esp8266-12e-remote-soil-moisture-temperature-humidity-monitor/
+\bibitem ihttps://www.teachmemicro.com/nodemcu-esp8266-dht22-interfacing/
+\bibitem ihttps://www.instructables.com/id/NodeMCU-ESP8266-WiFi-Robot-Car-Controlled-by-Appli/
+\bibitem ihttps://securingwaterforfood.org/innovators
+\bibitem ihttps://blynk.io/
+\bibitem ihttps://create.arduino.cc/projecthub
+\end{thebibliography}
+
+
+
+\end{document}
